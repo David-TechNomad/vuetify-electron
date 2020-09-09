@@ -1,0 +1,78 @@
+.preview-report {
+  overflow: hidden;
+  .preview-container {
+    width: 1200px;
+    .preview-header {
+      margin: 1rem 0;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 1rem;
+      .preview-report-title {
+        font-size: 3rem;
+      }
+      .query-infos {
+        justify-content: space-around;
+        margin-top: 1rem;
+        .query-box {
+          flex: 1;
+          justify-content: space-around;
+        }
+      }
+    }
+    .layout-row {
+      border: 1px solid #e6e6e6;
+      margin: 1rem 0;
+      .layout-row-title {
+        color: #ee7738;
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        .title-line {
+          background-color: #e6e6e6;
+          width: 20%;
+          margin: 0 2rem;
+          height: 1px;
+        }
+      }
+      .layout-row-message {
+        color: #ee7738;
+        font-size: 1.2rem;
+        line-height: 24px;
+      }
+      .add-message-btn-box {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  .preview-paging-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 1863px;
+    background-color: red;
+  }
+
+  .ps-icon {
+    font-size: 2.5rem;
+    transition: top 0.5s;
+    &.export-icon {
+      right: 10%;
+    }
+    &.query-icon {
+      left: 10%;
+    }
+    &.save-icon {
+      left: 15%;
+    }
+  }
+
+  .color-bar {
+    right: -6.5%;
+    transition: all 0.5s;
+    &:hover {
+      right: 1%;
+    }
+  }
+}
